@@ -1,0 +1,106 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Un532JjW68" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe width="790" height="600" frameborder="0" allowfullscreen src="http://html.com"></iframe>
+
+
+<pre  style="font-family: Open Sans; text-decoration: none; border: none;">
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both                     spaces and
+line breaks
+</pre>
+
+
+<form>
+  <input type="text" name="x">
+<input type="button" value="OKi doki">
+</form>
+
+<div class="drummer">
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+</div>
+<script>
+    window.addEventListener('keydown', function(e) {
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+        if(!audio) return;  // stop the function from running all together
+        audio.currentTime = 0; // rewind to the start
+        audio.play();  // playing the drums
+        key.classList.add('playing'); // adding css class playing to pop up yelow border
+
+    });
+
+    function removeTransition(e) {
+     //console.log(e);
+     if(e.propertyName !== 'transform') return; // skip it if it's not transform
+     //console.log(this)
+     this.classList.remove('playing');
+    }
+
+    const keys = document.querySelectorAll('.key');
+    keys.forEach( key => key.addEventListener('transitionend', removeTransition)); // each key gets added transition end eventListaener
+
+
+
+
+
+</script>
+
+<%= partial "layouts/cards" %>
+
+
+
+
+

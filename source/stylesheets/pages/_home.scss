@@ -1,6 +1,5 @@
 #home {
-  background-color: #D23333;
-  color: white;
+  color: black;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -14,4 +13,11 @@
     font-weight: bold;
     font-size: 16px;
   }
+
 }
+
+.home-content {
+    position: relative;
+
+  }
+
