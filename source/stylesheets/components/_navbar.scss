@@ -11,9 +11,17 @@
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-wagon-brand  {
+  height: 74px;
+    width: 73px;
 }
+
+
+.logo-big{
+  position: relative;
+    margin-top: -11em;
+}
+
 
 /* User Avatar */
 .navbar-wagon .avatar {
