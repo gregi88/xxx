@@ -17,7 +17,19 @@
 
     font: 14px/1 Tahoma, Arial, sans-serif;
     color: #006583;
+
+
+   transition: width 1s, background 0.5s 0.1s;
 }
+
+.backToTop:hover {
+  width: 200px;
+  background: orange;
+}
+
+
+
+
 
 .backToTop.hidden {
     opacity: 0;
