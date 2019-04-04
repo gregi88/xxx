@@ -1,22 +1,222 @@
+---
+title: Grzegorz Stachowiak developer, programmer Copenhagen
+---
+
+<div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4Un532JjW68" frameborder="0" allowfullscreen></iframe>
 
+<br>
 
 <iframe width="790" height="600" frameborder="0" allowfullscreen src="http://html.com"></iframe>
 
+<br>
 
 <pre  style="font-family: Open Sans; text-decoration: none; border: none;">
-Text in a pre element
+Text in a < pre > element
 is displayed in a fixed-width
 font, and it preserves
-both                     spaces and
+both                            spaces and
 line breaks
 </pre>
+
+
+<br>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>Hoverable                    Dropdown</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <span><mark style=" border: 3px solid black">Mouse over me</mark></span>
+  <div class="dropdown-content">
+  <ul style="list-style: none;">
+    <a href="#"><li style="text-align: center;">bib</li></a>
+    <a href=""><li>bib</li></a>
+    <a href=""><li>bib</li></a>
+    <a href=""><li>bib</li></a>
+
+
+  </ul>
+  </div>
+</div>
+
+<br>
+<h2>The button alert Element</h2>
+
+<button type="button" onclick="alert('fuck dig man!!!!!!')">Click Me!</button>
+
+<br>
+<br>
+<form action="/action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab" selected>Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+
+<br>
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<br>
+<br>
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+<br>
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+<br>
 
 
 <form>
   <input type="text" name="x">
 <input type="button" value="OKi doki">
 </form>
+
+<br>
+
+<form>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</form>
+
+<br>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings for holiday!</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+    <td rowspan="2">$50</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+<br>
+
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+
+
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sum: $180</td>
+  </tr>
+</table>
+
+
+
+<br>
+
+
+
+<p id="demo">Click the button to change the text in this paragraph.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Fuck dig man!!!";
+}
+</script>
+
+<br>
+<br>
+
+<br>
+
 
 <div class="drummer">
 
@@ -70,6 +270,9 @@ line breaks
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 </div>
+
+
+
 <script>
     window.addEventListener('keydown', function(e) {
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
@@ -92,15 +295,16 @@ line breaks
     const keys = document.querySelectorAll('.key');
     keys.forEach( key => key.addEventListener('transitionend', removeTransition)); // each key gets added transition end eventListaener
 
-
-
-
-
 </script>
+
+
+<br>
+<br>
+<br>
 
 <%= partial "layouts/cards" %>
 
 
-
+</div>
 
 
