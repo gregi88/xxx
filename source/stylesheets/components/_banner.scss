@@ -1,0 +1,104 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("mac.jpg");
+  */
+  background-color: black;
+  background-image: url("/images/mac.jpg");
+  background-size: cover;
+  background-position: center;
+ }
+
+ pre {
+  font-family: "Press Start 2P";
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+
+ }
+
+ .banner-content{
+
+  top: 4em;
+  right: 2em;
+  text-transform: capitalize;
+  position: absolute;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  transition: height 2s;
+ }
+
+
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+
+
+.moving-box {
+  width: 130px;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  border: 2px white solid;
+  color: white;
+  background-color: transparent;
+  position: relative;
+  top: 1em;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   { right:0px; top:0px;}
+  25%  { right:200px; top:0px;}
+  50%  { right:200px; top:200px;}
+  75%  { right:0px; top:200px;}
+  100% { right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   { right:0px; top:0px;}
+  25%  { right:200px; top:0px;}
+  50%  { right:200px; top:200px;}
+  75%  { right:0px; top:200px;}
+  100% { right:0px; top:0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
