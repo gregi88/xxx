@@ -1,7 +1,8 @@
 .navbar-home {
   position: absolute;
+  z-index: 1;
   width: 100%;
-  background: transparent;
+background-color: black;
   box-shadow: none;
   .navbar-wagon-link {
     color: white;
@@ -13,11 +14,12 @@
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   transition: all 0.3s ease;
-  height: 70px;
+  height: 71px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 /* Logo */
@@ -31,6 +33,7 @@
 .logo-big {
 
 position: relative;
+top: 2em;
   text-align: center;
 
 
