@@ -11,7 +11,7 @@ function createButton(){
   var button = document.createElement("button");
 
   button.classList.add("backToTop", "hidden");
-  button.textContent = "BACK TO TOP"
+  button.textContent = " ^ "
   document.body.appendChild(button);
 
   return button;
@@ -52,7 +52,7 @@ function createButton(){
 
   window.addEventListener("scroll", function(e) {
 
-    if(document.scrollingElement.scrollTop >= 100) {
+    if(document.scrollingElement.scrollTop >= 500) {
         button.classList.remove("hidden");
     } else {
         button.classList.add("hidden");

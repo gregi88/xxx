@@ -1,11 +1,11 @@
 
 .backToTop {
-    padding: 15px 25px;
+    padding: 0px 19px;
     border: none;
-    border-radius: 10px;
-    background: rgba(0, 198, 255, .9);
+    border-radius: 50%;
+    height: 57px;
 
-    opacity: 1;
+    opacity: 0.8;
     -webkit-transition: visibility 0.2s, opacity 0.2s;
     transition: visibility 0.2s, opacity 0.2s;
 
@@ -16,15 +16,15 @@
     cursor: pointer;
 
     font: 14px/1 Tahoma, Arial, sans-serif;
-    color: #006583;
-
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 20px;
 
    transition: width 1s, background 0.5s 0.1s;
 }
 
 .backToTop:hover {
-  width: 200px;
-  background: orange;
+
 }
 
 
