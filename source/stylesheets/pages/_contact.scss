@@ -1,0 +1,75 @@
+.container1 {
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+
+  align-items: center;
+  /*
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("mac.jpg");
+  */
+  position: relative;
+  top: 2em;
+
+
+  background-image: url("/images/form2.jpg");
+  background-size: cover;
+  background-position: center;
+ }
+
+.contact-title {
+  text-align: left;
+  font-size: 32px;
+  line-height: 10px;
+  color: black;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white !important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white !important;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white !important;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: white !important;
+}
+
+
+.form-control{
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  outline: none;
+  background: transparent;
+
+  max-width: 400px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
