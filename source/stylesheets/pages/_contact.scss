@@ -2,25 +2,23 @@
   text-align: center;
   height: 100vh;
   justify-content: center;
-
   align-items: center;
   /*
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("mac.jpg");
   */
   position: relative;
   top: 2em;
-
-
   background-image: url("/images/form2.jpg");
   background-size: cover;
   background-position: center;
  }
 
 .contact-title {
+
   text-align: left;
   font-size: 32px;
   line-height: 10px;
-  color: black;
+  color: white;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -52,19 +50,37 @@
   color: black;
   outline: none;
   background: transparent;
-
-  max-width: 400px;
   font-size: 18px;
+  color: white;
 }
 
+form {
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 446px;
+  border-radius: 4px;
+}
 
+.submit {
+  border: 2px solid black;
+  border-radius: 4px;
+  color: white;
+  background: #89EDEC;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  transition: all .7s ease-in-out;
+}
 
+.submit:hover{
+  transform: scale(1 , 1.1);
+  background: #4e9998;
+}
 
-
-
-
-
-
+input {
+  color: white;
+}
 
 
 
