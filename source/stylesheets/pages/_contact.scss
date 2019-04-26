@@ -13,6 +13,28 @@
   background-position: center;
  }
 
+.width {
+  max-width: 450px;
+  max-height: 500px;
+  position: relative;
+  top: 2em;
+
+}
+
+.trans {
+    height: 2.3em;
+    background-color: #464545;
+    z-index: 0;
+    position: relative;
+    left: 3em;
+    top: -1.5em;
+    color: white;
+    margin-left: -3em;
+    margin-right: 3em;
+    border-radius: 0px 0px 4px 4px;
+
+}
+
 .contact-title {
 
   text-align: left;
@@ -51,12 +73,13 @@
   outline: none;
   background: transparent;
   font-size: 18px;
-  color: white;
+  color: transparent;
+  max-width: 446px !important;
 }
 
 form {
   background: rgba(0, 0, 0, 0.5);
-  max-width: 446px;
+  max-width: 446px !important;
   border-radius: 4px;
 }
 
@@ -79,7 +102,7 @@ form {
 }
 
 input {
-  color: white;
+  color: transparent !important ;
 }
 
 
